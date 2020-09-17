@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visuality-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  font-family: 'Lato', sans-serif;
+}
+
+.site-container {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.site-container ul {
+  list-style: none;
+}
+
+.page-header,
+.page-header__navigation,
+.page-header__slogan,
+.page-header__menu {
+  display: flex;
+}
+
+.page-header {
+  position: relative;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/header-background.jpg");
+}
+
+.page-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 1600px;
+  height: 64px;
+  background-size: cover;
+  background-image: url("../img/header-figure.svg");
+}
+
+.page-header__navigation {
+  padding: 20px 25px;
+  padding-bottom: 130px;
+}
+
+.page-header__menu {
+  padding-left: 170px;
+}
+
+.main-menu__item {
+  align-self: flex-start;
+  padding-left: 55px;
+  cursor: pointer;
+  position: relative;
+}
+
+.main-menu__item--with-drop-button {
+  padding-right: 15px;
+}
+
+.main-menu__item--with-drop-button::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/down-shape.svg");
+  top: 12px;
+  height: 5px;
+  width: 5px;
+  margin-left: 15px;
+}
+
+.main-menu__link {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.page-header__slogan {
+  flex-direction: column;
+  padding-left: 330px;
+  padding-right: 870px;
+  padding-bottom: 340px;
+}
+
+.slogan__caption {
+  font-size: 52px;
+  line-height: 62px;
+  color: #ffffff;
+  font-weight: lighter;
+  text-shadow: 0px 1px 2px #000000;
+}
+
+.slogan__text {
+  font-size: 14px;
+  line-height: 25px;
+  color: #ffffff;
+  font-weight: normal;
+  text-shadow: 0px 1px 2px #000000;
+}
+
+.page-main {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  padding-left: 320px;
+  padding-right: 320px;
+  padding-bottom: 85px;
+  padding-top: 50px;
+}
+
+.quotes__text {
+  font-size: 20px;
+  line-height: 28px;
+  font-style: italic;
+  color: #fe992a;
+  position: relative;
+  width: 300px;
+}
+
+.quotes__quote {
+  font-size: 48px;
+}
+
+.quotes__quote--top {
+  position: absolute;
+  display: inline-block;
+  top: -25px;
+}
+
+.quotes__quote--bottom {
+  position: absolute;
+  display: inline-block;
+  transform: rotate(180deg);
+  bottom: -25px;
+}
+
+.page-main__quotes{
+  padding-right: 40px;
+  padding-top: 20px;
+}
+
+.page-main__main-data {
+  padding-left: 40px;
+}
+
+.page-main__quotes p {
+  padding: 0;
+  margin: 0;
+}
+
+.quotes__nav {
+  text-align: right;
+  padding-top: 65px;
+}
+
+.quotes__button {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  height: 30px;
+  width: 30px;
+  background-color: #fe992a;
+  color: #ffffff;
+  border: none;
+  font-size: 11px;
+  line-height: 8px;
+  font-weight: bold;
+}
+
+.quotes__button--disable {
+  background-color: #ffba6e;
+}
+
+.main-data__header{
+  font-size: 24px;
+  line-height: 24px;
+  color: #fe992a;
+  font-weight: normal;
+}
+
+.main-data_text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  color: #737c85;
+}
+
+.page-footer {
+  padding-top: 40px;
+  padding-bottom: 220px;
+  background-color: #e77370;
+  display: flex;
+  padding-left: 320px;
+  padding-right: 320px;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.page-footer__contacts {
+  padding-right: 180px;
+}
+
+.contacts .contacts__item {
+  padding: 0;
+  margin: 0;
+}
+
+.page-footer a {
+  color: #ffffff;
+}
+
+.page-footer__sitemap {
+  display: flex;
+}
+
+.sitemap__group {
+  padding-right: 80px;
+}
+
+.sitemap__group ul {
+  margin: 0;
+  padding: 0;
+}
+
+.sitemap__group-header {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
